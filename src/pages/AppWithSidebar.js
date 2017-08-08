@@ -76,6 +76,19 @@ const SidebarNavLink = styled.a`
 	}
 `;
 
+const SidebarExternalLink = styled.a`
+	background: linear-gradient(to top, #f5f5f5, #f5f5f5);
+	color: #333;
+	cursor: pointer;
+	display: block;
+	padding: .5em 1em;
+	text-decoration: none;
+	&:focus {
+		color: #f5f5f5;
+		background: linear-gradient(to top, #3270a1, #4682c4);
+	}
+`;
+
 const MainContent = styled.div`
 	grid-column: 4 / 10;
 	grid-row: 2 / 2;
@@ -275,14 +288,13 @@ class AppWithSidebar extends Component {
 							</SidebarNavLink>
 						</li>
 						<li>
-							<SidebarNavLink
+							<SidebarExternalLink
 								href="https://github.com/geoffdavis92/react-plus-grid"
 								target="_blank"
 								rel="noopener noreferrer"
-								style={{ color: "#f5f5f5", background: "linear-gradient(to top, #3270a1, #4682c4)" }}
 							>
 								View The Code&nbsp;&raquo;
-							</SidebarNavLink>
+							</SidebarExternalLink>
 						</li>
 					</SidebarNav>
 				</Sidebar>
