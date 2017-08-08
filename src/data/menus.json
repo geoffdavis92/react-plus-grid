@@ -1,0 +1,14 @@
+[
+	{
+		"route": "/",
+		"text": "Home"
+	},
+	{
+		"route": "/splash",
+		"text": "Splash Page"
+	},
+	{
+		"route": "/sidebar",
+		"text": "App With Sidebar"
+	}
+]
