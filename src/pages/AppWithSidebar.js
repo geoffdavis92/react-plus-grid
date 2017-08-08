@@ -10,6 +10,7 @@ const Code = styled.code`
 	display: inline-block;
 	margin: 0 1px;
 	padding: 1px 4px 3px;
+	vertical-align: top;
 `;
 
 const WrappedPage = styled(Page)`
@@ -273,12 +274,24 @@ class AppWithSidebar extends Component {
 								Fun With Offsets
 							</SidebarNavLink>
 						</li>
+						<li>
+							<SidebarNavLink
+								href="https://github.com/geoffdavis92/react-plus-grid"
+								target="_blank"
+								rel="noopener noreferrer"
+								style={{ color: "#f5f5f5", background: "linear-gradient(to top, #3270a1, #4682c4)" }}
+							>
+								View The Code&nbsp;&raquo;
+							</SidebarNavLink>
+						</li>
 					</SidebarNav>
 				</Sidebar>
 				<MainContent>
 					{this.state.path === "" &&
 						<SubHome>
-							<p>A very simple container using <Code>display: grid</Code> and <Code>repeat()</Code> and <Code>minmax()</Code> CSS functions.</p> 
+							<p>
+								A very simple container using <Code>display: grid</Code> and <Code>repeat()</Code> and <Code>minmax()</Code> CSS functions.
+							</p>
 							<HomeContent>
 								<p>
 									Duis sit pariatur cupidatat laborum esse. Culpa laborum deserunt ea duis quis labore fugiat ea labore ad id. Et cillum ipsum mollit esse
@@ -295,7 +308,9 @@ class AppWithSidebar extends Component {
 						</SubHome>}
 					{this.state.path === "signup" &&
 						<SubSignup>
-							<p>Simple signup-style page, using <Code>grid-column</Code> only on the form to create the form's row.</p>
+							<p>
+								Simple signup-style page, using <Code>grid-column</Code> only on the form to create the form's row.
+							</p>
 							<SignupContent>
 								<article>
 									<p>
